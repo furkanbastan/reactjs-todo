@@ -1,0 +1,39 @@
+.todosCard{
+    background-color: rgba(0, 0, 0, .8);
+    box-shadow: 0 0 50px rgba(0, 0, 0, .8);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.todosHeader{
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--queen);
+
+    & h2{
+        font-weight: 600;
+        font-size: larger;
+    }
+}
+
+.todosBody{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+
+    & h2{
+        font-size: large;
+        color: rgba(255, 255, 255, .3);
+    }
+}
+
+.todosFooter{
+    display: grid;
+    grid-template-columns: 1fr 60px;
+    border-radius: 10px;
+    overflow: hidden;
+}
